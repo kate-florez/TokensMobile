@@ -1,0 +1,281 @@
+@font-face {
+    font-family: CamptonLightBbuttonsAndTtles; 
+    src: url(../fonts/CamptonLightBbuttonsAndTtles.otf);
+    src: local(../fonts/CamptonLightBbuttonsAndTtles.otf), url(../fonts/CamptonLightBbuttonsAndTtles.otf);
+}
+@font-face {
+    font-family: CamptonThin; 
+    src: url(../fonts/CamptonThin.otf);
+    src: local(../fonts/CamptonThin.otf), url(../fonts/CamptonThin.otf);
+}
+@font-face {
+    font-family: Graviton-AgudaLight; 
+    src: url(../fonts/Graviton-AgudaLight.otf);
+    src: local(../fonts/Graviton-AgudaLight.otf), url(../fonts/Graviton-AgudaLight.otf);
+}
+@font-face {
+    font-family: NotoSans-Italic; 
+    src: url(../fonts/NotoSans-Italic.ttf);
+    src: local(../fonts/NotoSans-Italic.ttf), url(../fonts/NotoSans-Italic.ttf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer,header,
+hgroup, menu, nav, section { display: block; }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font: 14px/22px ,arial, sans-serif;
+    color:#2f384b;
+    width: 100%;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+    text-decoration: none;
+}
+.link_popup, .link_popup:hover, .link_popup:focus {
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+* html .wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    background: url("../img/bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.wrapper>.container {
+    padding: 0;
+}
+.main {
+    min-height: 100%;
+}
+.header>.header_img img {
+    width: 100%;
+    padding: 2%;
+}
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 10% 10%;
+    background-color: #e8e8e8;
+    background-size: 100% 100%;
+    opacity: 0.8;
+}
+.content>.content_people {
+    padding: 0 10%;
+}
+.content .main_name {
+    font-size: 1.6em;
+    font-family: CamptonThin;
+    color: #2f384b;
+    text-align: center;
+    margin: 10% 0 8%;
+}
+.contacts {
+    width: 100%;
+    padding: 0 0 5%;
+    overflow: hidden;
+}
+.specific_block_contacts {
+    width: 30%;
+    float: left;
+    color: #2f384b;
+    text-align: center;
+    margin: 0 5% 5% 0;
+}
+.specific_block_contacts>.contact_img img{
+    width: 85%;
+}
+.contact_name>h3 {
+    font-size: 1.3em;
+    margin: 3% 0 0;
+}
+.last_line_block {
+    margin-right: 0;
+}
+.popup_menu_block {
+    background-color: #333c56;
+}
+.link_popup {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.link_popup:focus {
+    outline: 0;
+}
+.compose_mess img {
+    padding: 7% 7% 7% 0;
+}
+
+
+
+/*Chat-02*/
+.link_popup>.new_sms {
+    width: 100%;
+    padding: 0;
+}
+.sms_img, .peple_sms_name, .sms_date {
+    float: left;
+}
+.sms_img {
+    width: 15%;
+}
+.peple_sms_name {
+    width: 75%;
+}
+.sms_date {
+    width: 10%;
+}
+/*Chat-02*/
+
+
+
+
+
+
+
+.footer {
+    height: 53px;
+    margin-top: -53px;
+    bottom: 0;
+    position: fixed;
+}
+.footer_img> img {
+    width: 100%;
+}
+.footer>.footer_img {
+    padding: 0;
+}
+
+
+
+/*----------------- Modal window ---------------------*/
+
+
+.modal-wrap:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+.modal-overlay {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+    /*background-color: inherit;
+    opacity: 0.5;*/
+}
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 29%;
+}
+.modal-dialog {
+    background: #333c56;
+    opacity: 0.9;
+    border: #555555 solid 1px;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    width: 80%;
+    max-width: 500px;
+    z-index: 103;
+    border-radius: 10%;
+    width: 75% !important;
+    color: white;
+    font-family: CamptonLightBbuttonsAndTtles; 
+    text-align: center;
+}
+.modal-header {
+    border-bottom: #eaeaea solid 1px;
+    padding: 7% !important;
+}
+.modal-header img {
+    padding: 7% 0 7%;
+}
+.modal-header, .modal-footer {
+    padding: 20px 20px;
+}
+.modal-body {
+    padding: 2em;
+    margin: 0 !important;
+}
+.modal-header h2 {
+    font-size: 22px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+.modal .btn-close {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.modal-open:checked ~ .modal-wrap:before, .modal-open:checked ~ .modal-wrap .modal-overlay {
+    display: block;
+}
