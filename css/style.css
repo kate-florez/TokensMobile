@@ -152,6 +152,8 @@ img{
 .link_popup>.new_sms {
     width: 100%;
     padding: 0;
+    border-bottom: 1px solid #2f384b;
+    padding: 0 -10%;
 }
 .sms_img, .peple_sms_name, .sms_date {
     float: left;
