@@ -122,11 +122,11 @@ img{
     margin: 0 5% 5% 0;
 }
 .specific_block_contacts>.contact_img img{
-    width: 85%;
+    width: 75%;
 }
 .contact_name>h3 {
-    font-size: 1.3em;
-    margin: 3% 0 0;
+    font-size: 1.4em;
+    margin: 4% 0 0;
 }
 .last_line_block {
     margin-right: 0;
@@ -151,9 +151,9 @@ img{
 /*Chat-02*/
 .link_popup>.new_sms {
     width: 100%;
-    padding: 0;
+    padding: 3% 5% 4%;
     border-bottom: 1px solid #2f384b;
-    padding: 0 -10%;
+    margin: 0 0 7%;
 }
 .sms_img, .peple_sms_name, .sms_date {
     float: left;
@@ -167,6 +167,40 @@ img{
 .sms_date {
     width: 10%;
 }
+.content-chats2 {
+    padding: 0 0 10%;
+}
+.link_popup>.content_people_chats2 {
+    padding: 0 10%;
+}
+.peple_sms_name h3, .peple_sms_name h4 {
+    margin: 1%;
+    font-family: CamptonLightBbuttonsAndTtles; 
+    color: #333c56;
+}
+.peple_sms_name h3 {
+    font-size: 1.5em;
+}
+.peple_sms_name h4 {
+    font-size: 1em;
+}
+.sms_date {
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Chat-02*/
 
 
@@ -176,8 +210,8 @@ img{
 
 
 .footer {
-    height: 53px;
-    margin-top: -53px;
+    height: 50px;
+    margin-top: -50px;
     bottom: 0;
     position: fixed;
 }
