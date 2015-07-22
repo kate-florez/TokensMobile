@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TokensApp_Chats</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+    </head>
+    <body>
+
+        <section class="wrapper"> 
+            <div class="container"><img src="img/dialog-bg.png" id="bg" alt="">  
+                <div class="main">
+                    <div class="row header">
+                        <div class="col-xs-12 header_img header_img_dialogs">
+                            <img src="img/header-dialogs.png">
+                            <div class="dialog_name">
+                                <img src="img/person-1.png">
+                                <h2>Ethan Elliott</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <label class="link_popup"for="modal-2">
+                            
+                            <div class="col-xs-12"> 
+                                <div class="today_mes">
+                                    <span>Today</span>
+                                </div>	
+                                <div class="chat_mess">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arch
+                                    <span class="left_date" >11:45 AM</span>
+                                    </p>
+                                    
+                                </div>	
+                                <div class="chat_mess chat_mess_cont">
+                                    <div class="follow_contact">
+                                        <img src="img/img-contact.png">
+                                        <h3>Fitness for Everyone <br><span>Public</span><span class="left_members pull-right">1, 456 members</span></h3>
+                                        <input type="submit" name="submit" value="Follow">
+                                    </div>
+                                    <span class="left_date left_date_sms" >11:45 AM</span>
+                                </div>	
+                            </div>
+                        </label> 				
+                    </div>
+                </div>
+
+                <div class="row footer">
+                    <div class="col-xs-12 footer_img">
+                        <img src="img/button-menu.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<label for="modal-2" class="click_to_form">I want clients</label>-->
+        <div class="modal">
+            <input class="modal-open" id="modal-2" type="checkbox" hidden="">
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-2"></label>
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <a href="#"><img src="img/popup-btn.png"></a>
+
+                        <h2>And talk to Your friends for FREE</h2>       			
+                    </div>
+                    <div class="modal-body">
+                        <a href="#"><h2>More info </h2></a>       			
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Jquery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='js/jquery-1.11.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Bootstrap -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Popup -->
+        <script type="text/javascript" url="js/popup-jquery.js"></script>
+
+        <!-- Dialog-bg -->
+        <script type="text/javascript" script="js/dialog.js"></script>
+    </body>
+</html>

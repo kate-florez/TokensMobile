@@ -143,7 +143,7 @@ img{
     outline: 0;
 }
 .compose_mess img {
-    padding: 7% 7% 7% 0;
+    padding: 5% 7% 7% 0;
 }
 
 
@@ -167,7 +167,7 @@ img{
 .sms_date {
     width: 10%;
 }
-.content-chats2 {
+.content_chats2 {
     padding: 0 0 10%;
 }
 .link_popup>.content_people_chats2 {
@@ -187,31 +187,136 @@ img{
 .sms_date {
     font-size: 0.8em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Chat-02*/
 
 
+
+/*Dialogs*/
+.header_img_dialogs {
+    padding: 0% 2% 8%;
+}
+.dialog_name {
+    width: 55%;
+      overflow: hidden;
+    margin: -9% auto;
+
+}
+.header_img_dialogs>.dialog_name img {
+    width: 16%;
+}
+.dialog_name img, .dialog_name h2 {
+    float: left;
+}
+.dialog_name h2 {
+    font-size: 1.6em;
+    color: white;
+    margin: 5% 2%;
+        font-family: CamptonLightBbuttonsAndTtles; 
+}
+
+#bg { position: fixed; top: 0%; left: 0%; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+.today_mes {
+    width: 25%;
+    height: 15%;
+    margin: 1% auto;
+    text-align: center;
+    background-color: #d8dce2;
+    border-radius: 0.5em/1em;
+    border: 1px solid white;
+    color: #383f53;
+    font-family: CamptonLightBbuttonsAndTtles; 
+}
+.chat_mess {
+    background-color: #ECEEEF;
+    padding: 2%;
+    margin: 3% 3% 5%;
+    border-radius: 1em;
+}
+.chat_mess:before {
+    content: " ";  
+    width: 20px;
+    height: 30px;    
+    /*border-radius: 1em 1em;   */
+    line-height: 42px;  
+    /*background-color: #d8dce2;*/
+    float: left;  
+    position: relative; 
+      top: -30px;
+  left: -8px;
+    background: url("../img/хвостик.png") no-repeat;
+
+}
+.chat_mess p {
+    line-height: 1em;
+    font-size: 1.4em;
+    font-family: CamptonLightBbuttonsAndTtles; 
+    margin: 0;
+}
+.chat_mess .left_date {
+    float: right;
+    font-size: 0.9em;
+    margin:1% 0 2%;
+    color: #383f53;
+}
+.follow_contact {
+    border: 1px solid #9297a5;
+      overflow: hidden;
+      width: 60%;
+      font-family: Arial;
+}
+.chat_mess_cont {
+    width: 50%;
+}
+.follow_contact>img {
+width: 100%;
+}
+.follow_contact>h3 {
+    margin: 7%;
+    font-size:1em;
+        font-family: CamptonLightBbuttonsAndTtles; 
+        font-weight: bold;
+}
+.follow_contact>h3>span {
+    margin: 5% 0 0;
+    font-size: 0.9em;
+      line-height: 2;
+      font-weight: lighter;
+}
+.left_members {
+    width: 50%;
+    line-height: 1;
+    font-size: 0.8em;
+    text-align: center;
+    color: #8e919a;
+}
+.follow_contact input[type="submit"] {
+    width: 95%;
+    border-radius: 50px;
+    background-color: inherit;
+    margin: 2% 2% 8%;
+    border: 1px solid black;
+    padding: 3%;
+        font-family: CamptonLightBbuttonsAndTtles; 
+}
+.chat_mess_cont>.left_date_sms {
+    margin: -12% 0 2%;
+}
+
+
+
+
+/*Dialogs*/
 
 
 
 
 
 .footer {
-    height: 50px;
-    margin-top: -50px;
+    height: 53px;
+    margin-top: -53px;
     bottom: 0;
     position: fixed;
 }
@@ -275,7 +380,7 @@ img{
     width: 80%;
     max-width: 500px;
     z-index: 103;
-    border-radius: 10%;
+    border-radius: 7%;
     width: 75% !important;
     color: white;
     font-family: CamptonLightBbuttonsAndTtles; 
@@ -283,10 +388,10 @@ img{
 }
 .modal-header {
     border-bottom: #eaeaea solid 1px;
-    padding: 7% !important;
+    padding: 5% !important;
 }
 .modal-header img {
-    padding: 7% 0 7%;
+    padding: 7% 0 5%;
 }
 .modal-header, .modal-footer {
     padding: 20px 20px;
@@ -295,13 +400,26 @@ img{
     padding: 2em;
     margin: 0 !important;
 }
-.modal-header h2 {
-    font-size: 22px;
+.modal-body>a {
     color: white;
+}
+.modal-body>a:hover, .modal-body>a:focus {
+    text-decoration: none;
+    color: white;
+}
+.modal-body>a h2 {
+    font-family: CamptonThin;
+    font-size: 1.9em;
+    margin: 0;
+    padding: 4%;
+}
+.modal-header h2 {
     font-size: 20px;
     font-weight: normal;
     line-height: 1;
     margin: 0;
+    font-family: CamptonThin;
+    font-size: 1.8em;
 }
 .modal .btn-close {
     color: #aaa;
