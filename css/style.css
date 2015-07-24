@@ -94,7 +94,7 @@ img{
 .content {
     box-sizing: border-box;
     min-height: 100%;
-    padding: 0 10% 10%;
+    padding: 0 10% 13%;
     background-color: #e8e8e8;
     background-size: 100% 100%;
     opacity: 0.8;
@@ -143,23 +143,27 @@ img{
     outline: 0;
 }
 .compose_mess img {
-    padding: 5% 7% 7% 0;
+    padding: 0% 0% 15% 0;
 }
 
 
 
 /*Chat-02*/
+.content-chats2 {
+    padding: 0;
+}
 .link_popup>.new_sms {
     width: 100%;
     padding: 3% 5% 4%;
     border-bottom: 1px solid #2f384b;
-    margin: 0 0 7%;
+    margin: 0 0 3%;
 }
 .sms_img, .peple_sms_name, .sms_date {
     float: left;
 }
 .sms_img {
     width: 15%;
+      margin-top: -6%;
 }
 .peple_sms_name {
     width: 75%;
@@ -187,22 +191,45 @@ img{
 .sms_date {
     font-size: 0.8em;
 }
+.chats_main .row {
+    margin: 0;
+}
+.chats_main .footer {
+    margin: -53px 0 0;
+}
+.sms_img span {
+    content: "1";
+      padding: 7% 32%;
+  
+    border-radius: 50%;
+    background: rgb(156, 34, 38);
+    color: yellow;
+    font-family: CamptonLightBbuttonsAndTtles; 
+}
+.col_new_sms {
+/*margin: 0 0% -20% 20%;*/
+z-index:100;
+float: right;
+  width: 50%;
+    top: 12px;
+  position: relative;
+}
 /*Chat-02*/
 
 
 
 /*Dialogs*/
 .header_img_dialogs {
-    padding: 0% 2% 8%;
+    padding: 0% 2% 8% !important;
 }
 .dialog_name {
-    width: 55%;
-      overflow: hidden;
-    margin: -9% auto;
+    width: 60%;
+    overflow: hidden;
+    margin: -10% auto;
 
 }
 .header_img_dialogs>.dialog_name img {
-    width: 16%;
+    width: 18%;
 }
 .dialog_name img, .dialog_name h2 {
     float: left;
@@ -211,7 +238,7 @@ img{
     font-size: 1.6em;
     color: white;
     margin: 5% 2%;
-        font-family: CamptonLightBbuttonsAndTtles; 
+    font-family: CamptonLightBbuttonsAndTtles; 
 }
 
 #bg { position: fixed; top: 0%; left: 0%; }
@@ -232,8 +259,8 @@ img{
 .chat_mess {
     background-color: #ECEEEF;
     padding: 2%;
-    margin: 3% 3% 5%;
-    border-radius: 1em;
+    margin: 3% 3% 10%;
+    border-radius: 0 1em 1em;
 }
 .chat_mess:before {
     content: " ";  
@@ -244,46 +271,46 @@ img{
     /*background-color: #d8dce2;*/
     float: left;  
     position: relative; 
-      top: -30px;
-  left: -8px;
+    top: -35px;
+    left: -6px;
     background: url("../img/хвостик.png") no-repeat;
 
 }
 .chat_mess p {
     line-height: 1em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: CamptonLightBbuttonsAndTtles; 
-    margin: 0;
+    margin: 0 0 0 6%
 }
 .chat_mess .left_date {
     float: right;
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin:1% 0 2%;
     color: #383f53;
 }
 .follow_contact {
     border: 1px solid #9297a5;
-      overflow: hidden;
-      width: 60%;
-      font-family: Arial;
+    overflow: hidden;
+    width: 56%;
+    font-family: Arial;
 }
 .chat_mess_cont {
-    width: 50%;
+    width: 58%;
 }
 .follow_contact>img {
-width: 100%;
+    width: 100%;
 }
 .follow_contact>h3 {
     margin: 7%;
     font-size:1em;
-        font-family: CamptonLightBbuttonsAndTtles; 
-        font-weight: bold;
+    font-family: CamptonLightBbuttonsAndTtles; 
+    font-weight: bold;
 }
 .follow_contact>h3>span {
-    margin: 5% 0 0;
+    margin: 5% 0 5%;
     font-size: 0.9em;
-      line-height: 2;
-      font-weight: lighter;
+    line-height: 1;
+    font-weight: lighter;
 }
 .left_members {
     width: 50%;
@@ -299,25 +326,121 @@ width: 100%;
     margin: 2% 2% 8%;
     border: 1px solid black;
     padding: 3%;
-        font-family: CamptonLightBbuttonsAndTtles; 
+    font-family: CamptonLightBbuttonsAndTtles; 
 }
 .chat_mess_cont>.left_date_sms {
-    margin: -12% 0 2%;
+    margin: -7% 0 2%;
+    font-family: CamptonLightBbuttonsAndTtles;
+    font-size: 0.85em;
+    color: #383f53;
+    float: right;
 }
-
-
-
-
+.main .row, .dialog_col {
+    margin: 0;
+    padding: 0 !important;
+}
 /*Dialogs*/
 
 
+/*user01*/
+.user_wrapper .user_row {
+    margin: 0;
+}
+.user_wrapper .user_page {
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+.user_page>img{
+    padding: 16% 0 0;
+    width: 30%;
+}
+.user_contacts {
+    padding: 0 7%;
+}
+.user_page h2, .user_page h1 {
+    font-family: CamptonLightBbuttonsAndTtles; 
+    margin: 2% 5% 0;
+}
+.user_page h2 {
+    font-size: 1.6em;
+}
+.user_page h1 {
+    font-size: 2em;
+}
+.user_page h3 {
+    margin: 15% 2%;
+    font-size: 1.5em;
+}
+.user_page h3, .user-page .contact_name h3  {
+    font-family: CamptonThin; 
+    color: white;
+}
+.contact_name>h3 {
+    font-size: 1.1em;
+    margin: 5% 0 0;
+}
+.user_wrapper {
+    background-image: url("../img/user-bg.png");
+}
+.user_page>.user_btn{
+
+}
+.user_img_get {
+    margin: 10% 0% 19%;
+    width: 80%;
+}
+.specific_block_contacts>.user_contact_img img{
+    width: 80%;
+}
+@media screen and (max-width: 320px) and (max-height: 480px){
+    .user_page h1 {
+      font-size: 1.6em;
+    }
+    .user_page h3 {
+        font-size: 1.1em;
+    }
+    .user_page>img {
+      padding: 10% 0 0;
+      width: 27%;
+    }
+    .specific_block_contacts>.contact_img img {
+      width: 65%;
+    }
+    .user_img_get {
+      margin: 5% 0% 16%;
+      width: 75%;
+    }
+    .contact_name>h3 {
+        font-size: 0.8em;
+    }
+    .content .main_name {
+        font-size: 1.1em;
+    }
+    .peple_sms_name h3 {
+        font-size: 1.2em;
+    }
+    .peple_sms_name h4 {
+        font-size: 0.7em;
+    }
+    .modal-header h2 {
+        font-size: 1.3em !important;
+    }
+}
+/*user01*/
 
 
 
-.footer {
-    height: 53px;
-    margin-top: -53px;
+
+
+
+
+
+.wrapper .footer {
+    /*height: 53px;*/
+    /*margin-top: -53px;*/
     bottom: 0;
+    margin: 0;
     position: fixed;
 }
 .footer_img> img {
@@ -325,6 +448,7 @@ width: 100%;
 }
 .footer>.footer_img {
     padding: 0;
+    margin: 0% 0 0;
 }
 
 
@@ -419,7 +543,7 @@ width: 100%;
     line-height: 1;
     margin: 0;
     font-family: CamptonThin;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 .modal .btn-close {
     color: #aaa;
